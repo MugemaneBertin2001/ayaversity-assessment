@@ -1,0 +1,150 @@
+/* Reset some default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    /* Your existing CSS styles for navbar go here */
+
+/* Additional styles for Twitter share button */
+.twitter-share {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.twitter-share a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #1DA1F2; /* Twitter blue */
+    transition: background-color 0.3s ease;
+}
+
+.twitter-share a:hover {
+    background-color: #0e71a9; /* Darker shade of Twitter blue on hover */
+}
+
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:hover {
+        text-decoration: underline;
+    }
+
+    .menu-icon.active {
+        display: block;
+    }
+
+    .navbar.active .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 20px;
+        z-index: 1;
+    }
+}
+/* Your existing CSS styles for the navbar, cards, and images */
+
+.social-buttons a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-buttons a:first-child {
+    background-color: #3b5998; /* Facebook color */
+}
+
+.social-buttons a:last-child {
+    background-color: #1DA1F2; /* Twitter color */
+}
+
+.social-buttons a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    margin-top:20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+.card img {
+    width: 100%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover; /* Ensure image covers the entire container */
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
